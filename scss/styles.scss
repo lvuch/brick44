@@ -1,0 +1,59 @@
+// body {
+//   font-family: $family-primary;
+// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Hind', 'sans-serif';
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 0 5px 0;
+}
+
+.button {
+  font-family: 'Hind', 'sans-serif';
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+p {
+  margin-top: 0;
+}
+
+hr {
+  border-style: dotted;
+}
+
+.border-right {
+  border-right: 3px double #E5E5E3;
+}
+
+.divider {
+  position: relative;
+  display: block;
+  background: pink;
+
+  &:before {
+    content: "";
+    border-top: 3px double #E5E5E3;
+    display: block;
+    width: 100%;
+    background: #567; 
+  }
+}
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+#intro {
+  background-image: url(../img/seal.svg);
+  background-repeat: no-repeat;
+  background-position: -4% -8%;
+  background-size: 25%;
+}
