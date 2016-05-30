@@ -1,4 +1,3 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/laurenvuchetich\/Desktop\/hardenwedding\/scss\/styles\.scss}line{font-family:\000034}}
 h1,
 h2,
 h3,
@@ -12,35 +11,30 @@ h6 {
   margin: 10px 0 5px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/laurenvuchetich\/Desktop\/hardenwedding\/scss\/styles\.scss}line{font-family:\0000317}}
 .button {
   font-family: 'Hind', 'sans-serif';
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/laurenvuchetich\/Desktop\/hardenwedding\/scss\/styles\.scss}line{font-family:\0000323}}
 p {
   margin-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/laurenvuchetich\/Desktop\/hardenwedding\/scss\/styles\.scss}line{font-family:\0000327}}
 hr {
   border-style: dotted;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/laurenvuchetich\/Desktop\/hardenwedding\/scss\/styles\.scss}line{font-family:\0000331}}
 .border-right {
   border-right: 3px double #E5E5E3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/laurenvuchetich\/Desktop\/hardenwedding\/scss\/styles\.scss}line{font-family:\0000335}}
 .divider {
   position: relative;
   display: block;
   background: pink;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/laurenvuchetich\/Desktop\/hardenwedding\/scss\/styles\.scss}line{font-family:\0000340}}
+
 .divider:before {
   content: "";
   border-top: 3px double #E5E5E3;
@@ -49,13 +43,11 @@ hr {
   background: #567;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/laurenvuchetich\/Desktop\/hardenwedding\/scss\/styles\.scss}line{font-family:\0000349}}
 header {
   position: absolute;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/laurenvuchetich\/Desktop\/hardenwedding\/scss\/styles\.scss}line{font-family:\0000354}}
 #intro {
   background-image: url(../img/seal.svg);
   background-repeat: no-repeat;
