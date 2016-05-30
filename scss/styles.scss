@@ -34,7 +34,7 @@ hr {
   display: block;
   background: pink;
 
-  &:before {
+  :before {
     content: "";
     border-top: 3px double #E5E5E3;
     display: block;
