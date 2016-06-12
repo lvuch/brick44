@@ -1,0 +1,47 @@
+/*
+Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
+        on line 88 of /Users/laurenvuchetich/Desktop/TEST/sass/styles.sass
+
+83:   align-content: stretch; /* Extra space in Cross Axis *\/
+84:   min-height: 65vh;
+85:   margin: 0;
+86: }
+87: 
+88:  .whitebox {
+89:     background: white;
+90:     padding: 5%;
+91:     margin: -15% 0 0 0;
+92:     position: relative;
+93:   }
+
+Backtrace:
+/Users/laurenvuchetich/Desktop/TEST/sass/styles.sass:88
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:473:in `tabulate'
+org/jruby/RubyArray.java:1613:in `each'
+org/jruby/RubyEnumerable.java:977:in `each_with_index'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:431:in `tabulate'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:396:in `_to_tree'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `render'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+org/jruby/RubyMethod.java:128:in `call'
+file:/Users/laurenvuchetich/Downloads/compass.app/Contents/Java/compass-app.jar!/hook/compass_patch.rb:108:in `update_stylesheet'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+org/jruby/RubyArray.java:1613:in `each'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `watch'
+org/jruby/RubyProc.java:271:in `call'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:252:in `on_change'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:290:in `initialize_adapter'
+org/jruby/RubyProc.java:271:in `call'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapter.rb:252:in `report_changes'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapter.rb:321:in `poll_changed_directories'
+/Users/laurenvuchetich/Downloads/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapter.rb:297:in `start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 88 of /Users/laurenvuchetich/Desktop/TEST/sass/styles.sass\A \A 83:   align-content: stretch; /* Extra space in Cross Axis */\A 84:   min-height: 65vh;\A 85:   margin: 0;\A 86: }\A 87: \A 88:  .whitebox {\A 89:     background: white;\A 90:     padding: 5%;\A 91:     margin: -15% 0 0 0;\A 92:     position: relative;\A 93:   }"; }
