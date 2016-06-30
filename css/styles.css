@@ -1,12 +1,18 @@
+* {
+  transition:ease all .25s;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Arapey', serif;
   margin: 0;
-  background: #eef1f2;
+  background: #f8f4f0;
 }
 
 p {
   font-family: 'Arapey', serif;
-  font-size: 16px;
+  font-size: 17px;
+  line-height: 1.2em;
 }
 
 h1,
@@ -19,7 +25,9 @@ h6 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+  line-height: 1.25em;
   margin: 10px 0 5px 0;
+  color: #333;
 }
 
 main {
@@ -48,12 +56,12 @@ p {
 
 a {
   text-decoration: none;
-  color: #123;
+  color: #43abc9;
 }
 
 hr {
   border: none;
-  border-top:3px double #E5E5E3;
+  border-top: 3px double #acabad;
   margin: 40px 0;
 }
 
@@ -82,7 +90,7 @@ header {
   background-image: url(../img/laugh.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   display: flex;
   flex-direction: row;
   justify-content: flex-start; /* align items in Main Axis */
@@ -95,8 +103,9 @@ header {
 .whitebox {
   background: white;
   padding: 5%;
-  margin: -10% 0 0 0;
+  margin: -10% auto 0 auto;
   position: relative;
+  z-index: 2;
 }
 
 .whitebox:before {
@@ -125,19 +134,59 @@ header {
   width: 10px;
 }
 
+.ribbon {
+  background: #093145;
+  color: white;
+  position: absolute;
+  padding: 10px;
+  top: -5px;
+  border-radius: 3px 3px 0 0;
+  font-family: 'Hind', 'sans-serif';
+  font-weight: bold;
+  line-height: 1em;
+  letter-spacing: 1.5px;
+  z-index: 3;
+  font-size: .75em;
+}
+
+.ribbon span {
+  background-color: #093145;
+  z-index: 3;
+  position: relative;
+  margin-top: 10px;
+}
+
+.ribbon:after {
+  content: "";
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  height: 10px;
+  width: 0;
+  left: 0;
+  border-style: solid;
+  border-top-width: 0;
+  border-bottom-width: 10px;
+  border-right-width: 25px;
+  border-left-width: 25px;
+  border-bottom-color: transparent;
+  border-right-color: #093145;
+  border-left-color: #093145;
+}
+
 .divider {
-  width: 100%;
   text-align: center;
   background-image: url(../img/divider-dot.svg);
   background-size: 6px;
   background-position: center;
   background-repeat: repeat-x;
-  height: 15px;
-  margin: 15px 0;
+  margin: 0 auto;
+  opacity: .5;
+  min-height: 1px;
 }
 
 .divider img {
-  background: #eef1f2;
+  background: #f8f4f0;
 }
 
 .callout {
@@ -149,4 +198,116 @@ header {
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 1.25em;
+  color: #3c6478;
+}
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.row:before,
+.row:after {
+  content:"";
+  display:table;
+}
+.row:after {
+  clear:both;
+}
+.row {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF TWELVE   ============================================================================= */
+
+.span_12_of_12 {
+  width: 100%;
+}
+
+.span_11_of_12 {
+  width: 91.53%;
+}
+
+.span_10_of_12 {
+  width: 83.06%;
+}
+
+.span_9_of_12 {
+  width: 74.6%;
+}
+
+.span_8_of_12 {
+  width: 66.13%;
+}
+
+.span_7_of_12 {
+  width: 57.66%; 
+}
+
+.span_6_of_12 {
+  width: 49.2%; 
+}
+
+.span_5_of_12 {
+  width: 40.73%; 
+}
+
+.span_4_of_12 {
+  width: 32.26%; 
+}
+
+.span_3_of_12 {
+  width: 23.8%;
+}
+
+.span_2_of_12 {
+  width: 15.33%; 
+}
+
+.span_1_of_12 {
+  width: 6.86%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .span_12_of_12,
+  .span_11_of_12,
+  .span_10_of_12,
+  .span_9_of_12,
+  .span_8_of_12,
+  .span_7_of_12,
+  .span_6_of_12,
+  .span_5_of_12,
+  .span_4_of_12,
+  .span_3_of_12,
+  .span_2_of_12,
+  .span_1_of_12 {
+    width: 100%;
+  }
+
+  #intro {
+    background-position: 80% center;
+  }
+  main {
+    width:90%;
+  }
+
+  .border-right {
+    border-right: 0;
+    border-bottom: 2px double #E5E5E3;
+  }
 }
