@@ -30,6 +30,16 @@ h6 {
   color: #333;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  padding-bottom: .25em;
+}
+
 main {
   width: 60%;
   max-width: 960px;
@@ -138,22 +148,33 @@ header {
   background: #093145;
   color: white;
   position: absolute;
-  padding: 10px;
+  padding: 10px 11px;
   top: -5px;
   border-radius: 3px 3px 0 0;
-  font-family: 'Hind', 'sans-serif';
-  font-weight: bold;
-  line-height: 1em;
-  letter-spacing: 1.5px;
-  z-index: 3;
-  font-size: .75em;
 }
 
-.ribbon span {
+.ribbon p {
   background-color: #093145;
   z-index: 3;
   position: relative;
-  margin-top: 10px;
+  font-family: 'Hind', 'sans-serif';
+  color: #ffffff;
+  font-weight: light;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  z-index: 3;
+  font-size: .65em;
+  margin: 0;
+}
+
+.ribbon big {
+  font-size: 1.90em;
+  font-weight: bold;
+  border-top: dotted thin white;
+  border-bottom: dotted thin white;
+  padding: 8px 0;
+  margin: 4px 0;
+  display: block;
 }
 
 .ribbon:after {
@@ -189,7 +210,7 @@ header {
   background: #f8f4f0;
 }
 
-.callout {
+.callout p{
   margin: 0;
   padding: 10px 0;
   text-align: center;
