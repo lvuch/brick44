@@ -179,7 +179,6 @@ header {
 
 .ribbon:after {
   content: "";
-  content: "";
   position: absolute;
   bottom: -20px;
   height: 10px;
@@ -323,6 +322,7 @@ header {
   #intro {
     background-position: 80% center;
   }
+
   main {
     width:90%;
   }
@@ -330,5 +330,61 @@ header {
   .border-right {
     border-right: 0;
     border-bottom: 2px double #E5E5E3;
+  }
+
+  .ribbon {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+
+  .ribbon p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .ribbon span {
+    border-top: dotted thin white;
+    border-bottom: dotted thin white;
+    padding: 8px 0;
+    margin: 4px 0;
+    display: block;
+  }
+
+  .ribbon big {
+    border: none;  
+    padding: 0;
+    margin: 0;
+  }
+
+.ribbon:after {
+    border-bottom-width: 32px;
+    border-right-width: 0;
+    border-left-width: 16px;
+    border-top-width: 32px;
+    border-bottom-color: #093145;
+    border-top-color: #093145;
+    border-left-color: transparent;
+    left: -6.5%;
+    top: 0;
+    height: 0;
+  }
+.ribbon:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  border-style: solid;
+  border-bottom-width: 32px;
+  border-right-width: 20px;
+  border-left-width: 0;
+  border-top-width: 32px;
+  border-bottom-color: #093145;
+  border-top-color: #093145;
+  border-left-color: transparent;
+  right: -6.5%;
+  top: 0;
+  width: 0;
+  height: 0;
   }
 }
